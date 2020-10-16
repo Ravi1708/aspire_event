@@ -1,0 +1,266 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+
+ 
+</head> 
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="{% static 'img/newlogo.png' %}" style="height: 150px;width: auto;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our services
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Catering</a>
+              <a class="dropdown-item" href="#">Decorations</a>
+              <a class="dropdown-item" href="#">Photography</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+  </header>
+  <section class="slide">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"data-interval="1600">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <img src="{% static 'img/visitingcardback.png' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="{% static 'img/birthday.png'%}" >
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <img src="{% static 'img/wedd2.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div>   
+          <div class="carousel-item">
+            <img src="{% static 'img/wedd4.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div>      
+          <div class="carousel-item">
+            <img src="{% static 'img/successparty.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/banner_party.jpeg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/banner_mrg.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/banner_puberty.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+      <hr class="hr-service">   
+  <section class="service">
+    <h3 class="service-head">Our Services</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card card-main shadow" style="width: 20rem; height: 20rem;">
+          <img class="card-img-top" src="{% static 'img/wedd1.jpg'%}" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">Wedding</h5>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-primary btn-small">view more <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card card-main shadow" style="width: 20rem; height: 20rem;">
+          <img class="card-img-top" src="{% static 'img/bir1.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">birthday party</h5>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-primary btn-small">view more <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card card-main shadow" style="width: 20rem; height: 20rem;">
+          <img class="card-img-top" src="{% static 'img/wedd1.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">successparty</h5>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-primary btn-small">view more <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card card-main shadow" style="width: 20rem; height: 20rem;">
+          <img class="card-img-top" src="{% static 'img/bir1.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">puberty Functions</h5>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-primary btn-small">view more <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card card-main shadow" style="width: 20rem; height: 20rem;">
+          <img class="card-img-top" src="{% static 'img/wedd1.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">business party</h5>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-primary btn-small">view more <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card card-main shadow" style="width: 20rem; height: 20rem;">
+          <img class="card-img-top" src="{% static 'img/bir1.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">indoor functions</h5>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-primary btn-small">view more <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col-md-4 abt">
+        <h1 class="text-center">About Us</h1>
+        <img src="{% static 'img/newlogo.png' %}" style="height: 250px;width: auto;" class="roundft">
+      </div>
+      <div class="col-md-4 use-links">
+        <h2>Useful links</h2>
+        <ul>
+          <li>Home</li>
+          <li>Our services</li>
+          <li>Catering</li>
+          <li>Photography</li>
+          <li>Decorations</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="col-md-4 follow-link">
+        <h3 class="h3">Follow Us On...</h3><br>
+        <div class="row">            
+          <div class="col-12">
+            <abbr title="Facebook"><button type="button"<a href="#" class="Social "><i class="fa fa-facebook fa-2x "></i></a></button></abbr>
+            <abbr title="Instagram"><button type="button"<a href="#" class="Social"><i class="fa fa-instagram fa-2x"></i></a> </button></abbr>
+            <abbr title="Twitter"><button type="button"<a href="#" class="Social"><i class="fa fa-twitter fa-2x"></i></a></button></abbr>
+          </div>
+          
+        </div>
+        <div class="row">            
+          <div class="col-12">
+            <abbr title="What's app Number"><button type="button"<a href="#" class="Social"><i class="fa fa-whatsapp fa-2x"></i></a>
+            </button></abbr>
+            <abbr title="Alternate Number To Call"><button type="button"<a href="#" class="Social"><i class="fa fa-phone fa-2x"></i></a> </button></abbr>    
+            <abbr title="E-Mail"><button type="button"<a href="#" class="Social m-0"><i class="fa fa-envelope-open fa-2x"></i></a></button></abbr>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </footer>
+  <!-----font awesome link-->
+  <script src="https://use.fontawesome.com/73e13e3057.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
